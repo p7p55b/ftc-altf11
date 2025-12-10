@@ -48,26 +48,19 @@ public class main_5 extends LinearOpMode {
               dcom1.setPower(-(gamepad1.left_trigger));
             }
           }
-		  //mode tir grace triangle
+		      //mode tir grace triangle
           if (gamepad1.y) {
             sht = 1;
-            break;
           }
           telemetry.addData("key", 123);
           telemetry.update();
         }
-	
-	      dcom2.setPower(1);
-	
-	      while (gamepad1.x) {
-	          dcom3.setPower(1);        
-        }
-        dcom3.setPower(0);
-        
-	      //triangle redémarre le mode conduite
-        if (gamepad1.y) {
-        sht = 0;
-	      dcom2.setPower(0);
+        while (sht == 1){
+          dcom3.setPower(1);
+          if (gamepad1.y) {
+            sht = 0;
+	          dcom2.setPower(0);
+          }
         }
       }
     }
