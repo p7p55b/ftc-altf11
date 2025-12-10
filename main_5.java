@@ -12,7 +12,7 @@ public class main_5 extends LinearOpMode {
   private DcMotor dcom0;
   private DcMotor dcom1;
   private DcMotor dcom2;
-  private Dcmotor dcom3;
+  private DcMotor dcom3;
   @Override
   public void runOpMode() {
     dcom0 = hardwareMap.get(DcMotor.class, "dcom0");
@@ -72,5 +72,6 @@ public class main_5 extends LinearOpMode {
     }
   }
 }
+
 
 
