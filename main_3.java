@@ -11,6 +11,7 @@ public class main_3 extends LinearOpMode {
   private DcMotor dcom0;
   private DcMotor dcom1;
   private DcMotor dcom2;
+  private DcMotor dcom3;
   @Override
   public void runOpMode() {
     dcom0 = hardwareMap.get(DcMotor.class, "dcom0");
