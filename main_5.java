@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 
 @TeleOp(name = "manual_final_v0.1.7")
-public class main_4 extends LinearOpMode {
+public class main_5 extends LinearOpMode {
 	//set les moteurs
   private DcMotor dcom0;
   private DcMotor dcom1;
@@ -72,4 +72,5 @@ public class main_4 extends LinearOpMode {
     }
   }
 }
+
 
