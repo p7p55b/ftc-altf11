@@ -66,12 +66,13 @@ public class main_5 extends LinearOpMode {
 		//triangle redémarre le mode conduite
         if (gamepad1.y) {
             sht = 0;
-	    dcom2.setPower(0);
+	    	dcom2.setPower(0);
         }
       }
     }
   }
 }
+
 
 
 
