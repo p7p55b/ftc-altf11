@@ -57,16 +57,17 @@ public class main_5 extends LinearOpMode {
           telemetry.update();
         }
 	
-	dcom2.setPower(1);
+	      dcom2.setPower(1);
 	
-	while (gamepad1.x) {
-	    dcom3.setPower(1);
-	dcom3.setPower(0);
+	      while (gamepad1.x) {
+	          dcom3.setPower(1);        
         }
-		//triangle redémarre le mode conduite
+        dcom3.setPower(0);
+        
+	      //triangle redémarre le mode conduite
         if (gamepad1.y) {
-            sht = 0;
-	    	dcom2.setPower(0);
+        sht = 0;
+	      dcom2.setPower(0);
         }
       }
     }
