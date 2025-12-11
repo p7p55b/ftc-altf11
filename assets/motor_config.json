@@ -1,0 +1,8 @@
+{
+  "motors": {
+    "Right_wheels": "dcom0",
+    "Left_wheels": "dcom1",
+    "Spinning_shit": "dcom2",
+    "Ball_sender": "dcom3"
+  }
+}
