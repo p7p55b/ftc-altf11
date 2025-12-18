@@ -87,11 +87,18 @@ public class main_stable extends LinearOpMode {
               LW.setPower(spndr * (brakes * gamepad1.left_stick_x));
             }
             if (gamepad1.left_stick_x == 0) {
-              if (gamepad1.right_trigger > 0) {
-                RW.setPower(spndr * (brakes));
-                //LW.Power(spndr * (brakes));
-                LW.Power(brakes);
-              }
+              if (spndr == 1) {
+                if (brakes > 0) {
+                  RW.setPower(-(brakes));
+                  //LW.Power(spndr * (brakes));
+                  LW.Power(-(brakes));
+                }
+              } else {
+                  if (brakes > 0) {
+                    RW.setPower(-(brakes));
+                    //LW.Power(spndr * (brakes));
+                    LW.Power(-(brakes)); 
+                  }
             }
           }
 
@@ -133,4 +140,5 @@ public class main_stable extends LinearOpMode {
       }
     }
   }
+
 }
